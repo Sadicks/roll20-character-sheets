@@ -1,25 +1,25 @@
 <div class="sheet-wrapper">
     <div>
-        <!-- Character Information -->
+        <!-- Informations générales du personnage -->
         <div class="sheet-baseinfo">
             <input type="text" name="attr_Display-Name" />
-            <label>Character Name</label>
+            <label>Nom</label>
         </div>
         <div class="sheet-baseinfo">
             <input type="text" name="attr_Current-Career" />
-            <label>Career</label>
+            <label>Carrière</label>
         </div>
         <div class="sheet-baseinfo">
             <input type="text" name="attr_Previous-Carerrs" />
-            <label>Previous Careers</label>
+            <label>Carrières précédentes</label>
         </div>
 
         <div class="sheet-baseinfo">
             <select name="attr_Race">
-                <option value="Dwarf">Dwarf</option>
-                <option value="Elf">Elf</option>
+                <option value="Dwarf">Nain</option>
+                <option value="Elf">Elfe</option>
                 <option value="Halfling">Halfling</option>
-                <option value="Human" selected>Human</option>
+                <option value="Human" selected>Humain</option>
                 <option value="Ogre">Ogre</option>
                 <option value="Skaven">Skaven</option>
             </select>
@@ -28,12 +28,12 @@
 
         <div class="sheet-baseinfo sheet-medium">
             <select name="attr_Size">
-                <option value="Tiny">Tiny</option>
-                <option value="Small">Small</option>
-                <option value="Medium" selected="selected">Medium</option>
-                <option value="Large">Large</option>
-                <option value="Huge">Huge</option>
-                <option value="Gargantuan">Gargantuan</option>
+                <option value="Tiny">Minuscule</option>
+                <option value="Small">Petit</option>
+                <option value="Medium" selected="selected">Moyen</option>
+                <option value="Large">Grand</option>
+                <option value="Huge">Immense</option>
+                <option value="Gargantuan">Gigantesque</option>
             </select>
             <label>Size</label>
         </div>
@@ -43,46 +43,46 @@
         </div>
         <div class="sheet-baseinfo sheet-medium">
             <input type="text" name="attr_Gender">
-            <label>Gender</label>
+            <label>Sexe</label>
         </div>
         <div class="sheet-baseinfo sheet-short">
             <input type="text" name="attr_Height">
-            <label>Height</label>
+            <label>Taille</label>
         </div>
         <div class="sheet-baseinfo sheet-short">
             <input type="text" name="attr_Weight">
-            <label>Weight</label>
+            <label>Poids</label>
         </div>
         <div class="sheet-baseinfo">
             <input type="text" name="attr_StarSign">
-            <label>Star Sign</label>
+            <label>Signe Astrale</label>
         </div>
         <div class="sheet-baseinfo">
             <input type="text" name="attr_Deity">
-            <label>Deity</label>
+            <label>Croyance</label>
         </div>
 
         <div class="sheet-baseinfo sheet-medium">
             <input type="text" name="attr_XP-Current" />
-            <label>Current XP</label>
+            <label>Pts d'Experience Actuel</label>
         </div>
         <div class="sheet-baseinfo sheet-medium">
             <input type="text" name="attr_XP" />
-            <label>Total XP</label>
+            <label>Pts d'Experience Total</label>
         </div>
-        <!-- /Character Information -->
+        <!-- /Informations générales du personnage -->
     </div>    
 
     <hr/>
 
     <div class="sheet-3colrow">
 
-        <!-- Left --> <!-- Characteristics and Initiative -->
+        <!-- Left --> <!-- Caractéristiques et initiative -->
         <div class="sheet-col">
-            <!-- Characteristics -->
+            <!-- Caractéristiques -->
             <div>
                 <input type="checkbox" id="sheet-characteristics" role="button" class="sheet-hidden">
-                <label for="sheet-characteristics" class="sheet-headtwo">Characteristics</label>
+                <label for="sheet-characteristics" class="sheet-headtwo">Caractéristiques</label>
                 <div class="sheet-statblock">
                     <!-- Primary Profile Header -->
                     <div class="sheet-header">
@@ -90,7 +90,7 @@
                             <label>Score</label> 
                         </div>
                         <div class="sheet-item sheet-large">
-                            <label>Primary Profile</label> 
+                            <label>Profil Principal</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>Bonus/Max</label> 
@@ -99,13 +99,13 @@
                             <label>Roll</label> 
                         </div>
                     </div>
-                    <!-- WeaponSkill -->
+                    <!-- Capacité de combat -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-small sheet-halfblack">
                             <input type="number" name="attr_WeaponSkill" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Weapon Skill</label> 
+                            <label>Capacité de Combat (CC)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -119,7 +119,7 @@
                             <input type="number" name="attr_BallisticSkill" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Ballistic Skill</label> 
+                            <label>Capacité de Tir (CT)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -133,7 +133,7 @@
                             <input type="number" name="attr_Strength" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Strength</label> 
+                            <label>Force (F)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="number" name="attr_Strength-Bonus" value="floor(@{Strength}/10)" disabled = "true"/>
@@ -148,7 +148,7 @@
                             <input type="number" name="attr_Toughness" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Toughness</label> 
+                            <label>Endurance (E)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="number" name="attr_Toughness-Bonus" value="floor(@{Toughness}/10)" disabled = "true"/>
@@ -163,7 +163,7 @@
                             <input type="number" name="attr_Agility" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Agility</label> 
+                            <label>Agilité (Ag)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -177,7 +177,7 @@
                             <input type="number" name="attr_Intelligence" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Intelligence</label> 
+                            <label>Intelligence (Int)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -191,7 +191,7 @@
                             <input type="number" name="attr_Willpower" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Willpower</label> 
+                            <label>Force Mentale (FM)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -205,7 +205,7 @@
                             <input type="number" name="attr_Fellowship" value="10"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Fellowship</label> 
+                            <label>Sociabilité (Soc)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -217,10 +217,10 @@
                     <!-- Secondary Profile Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-small">
-                            <label>Value</label> 
+                            <label>Valeur</label> 
                         </div>
                         <div class="sheet-item sheet-large">
-                            <label>Secondary Profile</label> 
+                            <label>Profil Secondaire</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
 
@@ -235,7 +235,7 @@
                             <input type="number" name="attr_Attacks" value="1"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Attacks</label> 
+                            <label>Attaques (A)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -248,7 +248,7 @@
                             <input type="number" name="attr_Wounds-Max" value="1"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Wounds</label> 
+                            <label>Blessures (B)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="number" name="attr_Wounds" value="1" />
@@ -262,7 +262,7 @@
                             <input type="number" name="attr_Magic" value="0"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Magic</label> 
+                            <label>Magie (Mag)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -275,7 +275,7 @@
                             <input type="number" name="attr_Fate-Points" value="0"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Fate Points</label> 
+                            <label>Points de Destin (PD)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                         </div>
@@ -297,7 +297,7 @@
                         <div class="sheet-item sheet-med">
                         </div>
                         <div class="sheet-item sheet-small">
-                            <label>Modifier</label> 
+                            <label>Modificateur</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>Roll</label> 
@@ -321,7 +321,7 @@
                     <!-- Conditional Modifiers Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-huge">
-                            <label>Talent Modifiers</label> 
+                            <label>Modificateurs de Talents</label> 
                         </div>
                     </div>
                     <textarea name="attr_Talent-Init-Modifiers"  class="sheet-small"></textarea>
@@ -334,12 +334,12 @@
             <!-- Health -->
             <div>
                 <input type="checkbox" id="sheet-health" role="button" class="sheet-hidden">
-                <label for="sheet-health" class="sheet-headtwo">Health</label>
+                <label for="sheet-health" class="sheet-headtwo">Santé</label>
                 <div class="sheet-statblock">
                     <!-- Critical Damage -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-large">
-                            <label>Critical Damage</label> 
+                            <label>Dommage(s) Critique(s)</label> 
                         </div>
                     </div>
                     <textarea name="attr_Critical_Damage"  class="sheet-small"></textarea>
@@ -359,7 +359,7 @@
                             <input type="number" name="attr_Insanity-Point" value="0"/>
                         </div>
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Insanity Points</label> 
+                            <label>Points de Folie</label> 
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
                         </div>
@@ -367,7 +367,7 @@
                     <!-- Mental Disorders Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-large">
-                            <label>Mental Disorders</label> 
+                            <label>Désordres Mentaux</label> 
                         </div>
                     </div>
                     <textarea name="attr_Mental_Disorders"  class="sheet-small"></textarea>
@@ -376,27 +376,27 @@
             <!-- Defences -->
             <div>
                 <input type="checkbox" id="sheet-defences" role="button" class="sheet-hidden">
-                <label for="sheet-defences" class="sheet-headtwo">Defences</label>
+                <label for="sheet-defences" class="sheet-headtwo">Points d'Armure</label>
                 <div class="sheet-statblock">
                     <!-- Defence Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-small">
-                            <label>Armour</label> 
+                            <label>Armure</label> 
                         </div>
                         <div class="sheet-item sheet-small">
                             <label></label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Leather</label> 
+                            <label>Cuir</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Stud</label> 
+                            <label>clouté</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Mail</label> 
+                            <label>Maille</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Plate</label> 
+                            <label>Plaque</label> 
                         </div>
                     </div>
                     <!-- Head -->
@@ -405,7 +405,7 @@
                             <input type="number" name="attr_Armour-Head" value="@{Head-Leather}+@{Head-Studded}+@{Head-Mail}+@{Head-Plate}" disabled>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Head</label> 
+                            <label>Tête</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="checkbox" name="attr_Head-Leather" value="1"/>
@@ -426,7 +426,7 @@
                             <input type="number" name="attr_Armour_Body" value="@{Body-Leather}+@{Body-Studded}+@{Body-Mail}+@{Body-Plate}" disabled>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Body</label> 
+                            <label>Corps</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="checkbox" name="attr_Body-Leather" value="1"/>
@@ -447,7 +447,7 @@
                             <input type="number" name="attr_Armor_Arms" value="@{Arms-Leather}+@{Arms-Studded}+@{Arms-Mail}+@{Arms-Plate}" disabled>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Arms</label> 
+                            <label>Bras</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="checkbox" name="attr_Arms-Leather" value="1"/>
@@ -468,7 +468,7 @@
                             <input type="number" name="attr_Armor-Legs" value="@{Legs-Leather}+@{Legs-Studded}+@{Legs-Mail}+@{Legs-Plate}" disabled>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Legs</label> 
+                            <label>Jambes</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="checkbox" name="attr_Legs-Leather" value="1"/>
@@ -489,7 +489,7 @@
             <!-- Movement -->
             <div>
                 <input type="checkbox" id="sheet-movement" role="button" class="sheet-hidden">
-                <label for="sheet-movement" class="sheet-headtwo">Movement</label>
+                <label for="sheet-movement" class="sheet-headtwo">Mouvement</label>
                 <div class="sheet-statblock">
 
                     <!-- Movement Header -->
@@ -500,16 +500,16 @@
                         <div class="sheet-item sheet-small">
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Leap</label> 
+                            <label>Saut</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Move</label> 
+                            <label>Mouvement</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>Charge</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Run</label> 
+                            <label>Course</label> 
                         </div>
                     </div>
                     <!-- Movement -->
@@ -518,7 +518,7 @@
                             <input type="number" name="attr_MoveCharacteristic" value="4"/>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Speed</label> 
+                            <label>Vitesse</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="number" name="attr_Leap" value="(@{MoveCharacteristic} + @{Strength-Bonus})" disabled>
@@ -536,7 +536,7 @@
                     <!-- Special Movement Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-large">
-                            <label>Special Movement</label> 
+                            <label>Mouvement spécial</label> 
                         </div>
                     </div>
                     <textarea name="attr_Special-Movement"  class="sheet-small"></textarea>
@@ -550,19 +550,19 @@
             <!-- Skills -->
             <div>
                 <input type="checkbox" id="sheet-skill" role="button" class="sheet-hidden">
-                <label for="sheet-skill" class="sheet-headtwo">Skills</label>
+                <label for="sheet-skill" class="sheet-headtwo">Compétences</label>
                 <div class="sheet-statblock">
 
                     <!-- Skills Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-large">
-                            <label>Skill Name</label> 
+                            <label>Nom de Compétence</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>1/2</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Taken</label> 
+                            <label>Acquis</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>+10%</label> 
@@ -577,7 +577,7 @@
                     <!-- Animal Care -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Animal Care (Int)</label> 
+                            <label>Soins des Animaux (Int)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Animal-Care" value="[[ceil(@{Intelligence}/2)]]" checked /> 
@@ -598,7 +598,7 @@
                     <!-- Charm -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Charm (Fel)</label> 
+                            <label>Charisme (Soc)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Charm" value="[[ceil(@{Fellowship}/2)]]" checked /> 
@@ -619,7 +619,7 @@
                     <!-- Command -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Command (Fel)</label> 
+                            <label>Commandement (Soc)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Command" value="[[ceil(@{Fellowship}/2)]]" checked /> 
@@ -640,7 +640,7 @@
                     <!-- Concealment -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Concealment (Ag)</label> 
+                            <label>Dissimulation (Ag)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Concealment" value="[[ceil(@{Agility}/2)]]" checked /> 
@@ -661,7 +661,7 @@
                     <!-- Consume Alcohol -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Consume Alcohol (T)</label> 
+                            <label>Résistance à l'alcool (E)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Consume-Alcohol" value="[[ceil(@{Toughness}/2)]]" checked /> 
@@ -682,7 +682,7 @@
                     <!-- Disguise -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Disguise (Fel)</label> 
+                            <label>Déguisement (Soc)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Disguise" value="[[ceil(@{Fellowship}/2)]]" checked /> 
@@ -703,7 +703,7 @@
                     <!-- Drive -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Drive (Str)</label> 
+                            <label>Conduite d'attelages (F)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Drive" value="[[ceil(@{Strength}/2)]]" checked /> 
@@ -724,7 +724,7 @@
                     <!-- Evaluate -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Evaluate (Int)</label> 
+                            <label>Evalutation (Int)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Evaluate" value="[[ceil(@{Intelligence}/2)]]" checked /> 
@@ -745,7 +745,7 @@
                     <!-- Gamble -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Gamble (Int)</label> 
+                            <label>Jeu (Int)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Gamble" value="[[ceil(@{Intelligence}/2)]]" checked /> 
@@ -766,7 +766,7 @@
                     <!-- Gossip -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Gossip (Fel)</label> 
+                            <label>Commérage (Soc)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Gossip" value="[[ceil(@{Fellowship}/2)]]" checked /> 
@@ -787,7 +787,7 @@
                     <!-- Haggle -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Haggle (Fel)</label> 
+                            <label>Marchandage (Soc)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Haggle" value="[[ceil(@{Fellowship}/2)]]" checked/> 
@@ -808,7 +808,7 @@
                     <!-- Intimidate -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Intimidate (Str)</label> 
+                            <label>Intimidation (F)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Intimidate" value="[[ceil(@{Strength}/2)]]" checked /> 
@@ -829,7 +829,7 @@
                     <!-- Outdoor Survival -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Outdoor Survival (Int)</label> 
+                            <label>Survie (Int)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Outdoor-Survival" value="[[ceil(@{Intelligence}/2)]]" checked /> 
@@ -871,7 +871,7 @@
                     <!-- Ride -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Ride (Ag)</label> 
+                            <label>Equitation (Ag)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Ride" value="[[ceil(@{Agility}/2)]]" checked /> 
@@ -892,7 +892,7 @@
                     <!-- Row -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Row (Str)</label> 
+                            <label>Canotage (F)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Row" value="[[ceil(@{Strength}/2)]]" checked /> 
@@ -913,7 +913,7 @@
                     <!-- Scale Sheer Surface -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Scale Sheer Surface (Str)</label> 
+                            <label>Escalade (F)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Scale-Sheer-Surface" value="[[ceil(@{Strength}/2)]]" checked /> 
@@ -934,7 +934,7 @@
                     <!-- Search -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Search (Int)</label> 
+                            <label>Fouille (Int)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Search" value="[[ceil(@{Intelligence}/2)]]" checked /> 
@@ -955,7 +955,7 @@
                     <!-- Silent Move -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Silent Move (Ag)</label> 
+                            <label>Déplacement silencieux (Ag)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Silent-Move" value="[[ceil(@{Agility}/2)]]" checked /> 
@@ -976,7 +976,7 @@
                     <!-- Swim -->
                     <div class="sheet-row">
                         <div class="sheet-item sheet-large sheet-black">
-                            <label>Swim (Str)</label> 
+                            <label>Navigation (F)</label> 
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
                             <input type="radio" name="attr_Swim" value="[[ceil(@{Strength}/2)]]" checked /> 
@@ -999,19 +999,19 @@
             <!-- Advanced Skills -->
             <div>
                 <input type="checkbox" id="sheet-skill" role="button" class="sheet-hidden">
-                <label for="sheet-skill" class="sheet-headtwo">Advanced Skills</label>
+                <label for="sheet-skill" class="sheet-headtwo">Compétences avancées</label>
                 <div class="sheet-statblock">
 
                     <!-- Skills Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-large">
-                            <label>Skill Name</label> 
+                            <label>Nom de Compétence</label> 
                         </div>
                         <div class="sheet-item sheet-large">
-                            <label>Char.</label> 
+                            <label>Modificateur</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
-                            <label>Taken</label> 
+                            <label>Acquis</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>+10%</label> 
@@ -1031,10 +1031,10 @@
                             <div class="sheet-item sheet-tiny sheet-black">
                                 <select name="attr_AdvancedSkillCharacteristic">
                                     <option value="@{Agility}">(Ag)</option>
-                                    <option value="@{Fellowship}">(Fel)</option>
+                                    <option value="@{Fellowship}">(Soc)</option>
                                     <option value="@{Intelligence}">(Int)</option>
-                                    <option value="@{Strength}">(S)</option>
-                                    <option value="@{Willpower}">(WP)</option>
+                                    <option value="@{Strength}">(F)</option>
+                                    <option value="@{Willpower}">(FM)</option>
                                 </select> 
                             </div>
                             <div class="sheet-item sheet-tiny sheet-black">
@@ -1061,18 +1061,18 @@
     <!-- Weapons -->
     <div>
         <input type="checkbox" id="sheet-weapons" role="button" class="sheet-hidden">
-        <label for="sheet-weapons" class="sheet-headtwo">Weapons</label>
+        <label for="sheet-weapons" class="sheet-headtwo">Armes</label>
         <div class="sheet-statblock">
             <!-- Melee Header -->
             <div class="sheet-header">
                 <div class="sheet-item sheet-small">
-                    <label>Melee Weapon Name</label> 
+                    <label>Noms armes de mélée</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Slot</label> 
+                    <label>Tenu</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Craftsmanship</label> 
+                    <label>Qualité</label> 
                 </div>
                 <div class="sheet-item sheet-nano">
                     <label>Enc</label> 
@@ -1081,16 +1081,16 @@
                     <label>Mod</label> 
                 </div>
                 <div class="sheet-item sheet-nano">
-                    <label>Damage</label> 
+                    <label>Dommage</label> 
                 </div>
                 <div class="sheet-item sheet-small">
-                    <label>Qualities</label> 
+                    <label>Propriétés</label> 
                 </div>				
                 <div class="sheet-item sheet-nano">
-                    <label>Attack</label>
+                    <label>Attaque</label>
                 </div>	
                 <div class="sheet-item sheet-nano">
-                    <label>Parry</label>
+                    <label>Parade</label>
                 </div>					
             </div>
             <!-- Melee Weapon Items -->
@@ -1103,18 +1103,18 @@
                     </div>
                     <div class="sheet-item sheet-tiny sheet-black">
                         <select name="attr_MeleeHand">
-                            <option value="0">Main Hand</option>
-                            <option value="-20">Off Hand</option>
-                            <option value="0">Two Handed</option>
-                            <option value="0">Other</option>
+                            <option value="0">en main directrice</option>
+                            <option value="-20">en main non directrice</option>
+                            <option value="0">à deux mains</option>
+                            <option value="0">autrement</option>
                         </select> 
                     </div>
                     <div class="sheet-item sheet-tiny sheet-black">
                         <select name="attr_MeleeCraftsmanship">
-                            <option value="-5">Poor</option>
-                            <option value="0" selected>Common</option>
-                            <option value="0" title="Reduce Encumbrance by 10%">Good</option>
-                            <option value="5" title="Reduce Encumbrance by 10%">Best</option>
+                            <option value="-5">Médiocre</option>
+                            <option value="0" selected>Commun</option>
+                            <option value="0" title="Reduce Encumbrance by 10%">Bonne</option>
+                            <option value="5" title="Reduce Encumbrance by 10%">Exceptionnelle</option>
                         </select>
                     </div>
                     <div class="sheet-item sheet-nano sheet-black">
@@ -1142,38 +1142,38 @@
             <!-- Combat Modifiers Header -->
             <div class="sheet-header">
                 <div class="sheet-item sheet-smaller">
-                    <label>Melee Combat Difficulty</label> 
+                    <label>Difficulté en Corps à Corps (CC)</label> 
                 </div>
                 <div class="sheet-item sheet-small">
-                    <label>Attack Type</label> 
+                    <label>Type d'attaque</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Aim</label> 
+                    <label>Visée</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Parrying Stance</label> 
+                    <label>Posture de parade</label> 
                 </div>
             </div>
             <!-- Combat Modifiers -->
             <div class="sheet-row">
                 <div class="sheet-item sheet-smaller">
                     <select name="attr_MeleeDifficulty">
-                        <option value="30">Very Easy (+30)</option>
-                        <option value="20">Easy (+20)</option>
+                        <option value="30">Tres facile (+30)</option>
+                        <option value="20">Facile (+20)</option>
                         <option value="10" selected>Routine (+10)</option>
-                        <option value="0" selected>Average</option>
-                        <option value="-10">Challenging (-10)</option>
-                        <option value="-20">Hard (-20)</option>
-                        <option value="-30">Very Hard (-30)</option>
+                        <option value="0" selected>Normale</option>
+                        <option value="-10">Compliquée (-10)</option>
+                        <option value="-20">Difficile (-20)</option>
+                        <option value="-30">Très Difficile (-30)</option>
                     </select>
                 </div>
                 <div class="sheet-item sheet-small">
                     <select name="attr_MeleeAttackType">
                         <option value="0" selected>Standard</option>
-                        <option value="0">Swift Attack</option>
-                        <option value="10">Charge Attack (+10)</option>
-                        <option value="-10">Guarded Attack (-10)</option>
-                        <option value="20">All Out Attack (+20)</option>
+                        <option value="0">Attaque Rapide</option>
+                        <option value="10">Charge (+10)</option>
+                        <option value="-10">Attaque Prudente (-10)</option>
+                        <option value="20">Attaque Brutale (+20)</option>
                     </select>
                 </div>
                 <div class="sheet-item sheet-tiny">
@@ -1190,19 +1190,19 @@
             <!-- Ranged Header -->
             <div class="sheet-header">
                 <div class="sheet-item sheet-small">
-                    <label>Ranged Weapon Name</label> 
+                    <label>Noms armes à distance</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Slot</label> 
+                    <label>tenu</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Craftsmanship</label> 
+                    <label>Qualité</label> 
                 </div>
                 <div class="sheet-item sheet-nano">
                     <label>Enc</label> 
                 </div>
                 <div class="sheet-item sheet-micro">
-                    <label>Damage</label> 
+                    <label>Dommage</label> 
                 </div>
                 <div class="sheet-item sheet-nano">
                     <label>Mod</label> 
@@ -1211,19 +1211,19 @@
                     <label>Total</label> 
                 </div>
                 <div class="sheet-item sheet-micro">
-                    <label>Range</label> 
+                    <label>Portée</label> 
                 </div>
                 <div class="sheet-item sheet-micro">
-                    <label>Reload</label> 
+                    <label>Rechargement</label> 
                 </div>
                 <div class="sheet-item sheet-nano">
-                    <label>Ammo</label>
+                    <label>Munitions</label>
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Qualities</label> 
+                    <label>Propriétés</label> 
                 </div>				
                 <div class="sheet-item sheet-nano">
-                    <label>Attack</label>
+                    <label>Attaque</label>
                 </div>	
             </div>
             <!-- Ranged Weapon Items -->
@@ -1234,18 +1234,18 @@
                     </div>
                     <div class="sheet-item sheet-tiny sheet-black">
                         <select name="attr_RangedHand">
-                            <option value="0">Main Hand</option>
-                            <option value="-20">Off Hand</option>
-                            <option value="0">Two Handed</option>
-                            <option value="0">Other</option>
+                            <option value="0">en main directrice</option>
+                            <option value="-20">en main non directrice</option>
+                            <option value="0">à deux mains</option>
+                            <option value="0">autrement</option>
                         </select>
                     </div>
                     <div class="sheet-item sheet-tiny sheet-black">
                         <select name="attr_RangedCraftsmanship">
-                            <option value="-5">Poor</option>
-                            <option value="0" selected>Common</option>
-                            <option value="0">Good</option>
-                            <option value="5">Best</option>
+                            <option value="-5">Médiocre</option>
+                            <option value="0" selected>Commun</option>
+                            <option value="0">Bonne</option>
+                            <option value="5">Exceptionnelle</option>
                         </select>
                     </div>
                     <div class="sheet-item sheet-nano sheet-black">
@@ -1281,35 +1281,35 @@
             <!-- Ranged Combat Modifiers Header -->
             <div class="sheet-header">
                 <div class="sheet-item sheet-smaller">
-                    <label>Ranged Combat Difficulty</label> 
+                    <label>Difficulté en Capacité de Tir (CT)</label> 
                 </div>
                 <div class="sheet-item sheet-smaller">
-                    <label>Attack Type</label> 
+                    <label>Type d'attaque</label> 
                 </div>
                 <div class="sheet-item sheet-tiny">
-                    <label>Aim</label> 
+                    <label>Visée</label> 
                 </div>
                 <div class="sheet-item sheet-smaller">
-                    <label>Range</label> 
+                    <label>Portée</label> 
                 </div>
             </div>
             <!-- Combat Modifiers -->
             <div class="sheet-row">
                 <div class="sheet-item sheet-smaller">
                     <select name="attr_RangedDifficulty">
-                        <option value="30">Very Easy (+30)</option>
-                        <option value="20">Easy (+20)</option>
+                        <option value="30">Tres facile (+30)</option>
+                        <option value="20">Facile (+20)</option>
                         <option value="10">Routine (+10)</option>
-                        <option value="0" selected>Average</option>
-                        <option value="-10">Challenging (-10)</option>
-                        <option value="-20">Hard (-20)</option>
-                        <option value="-30">Very Hard (-30)</option>
+                        <option value="0" selected>Normale</option>
+                        <option value="-10">Compliquée(-10)</option>
+                        <option value="-20">Difficile (-20)</option>
+                        <option value="-30">Très difficile (-30)</option>
                     </select>
                 </div>
                 <div class="sheet-item sheet-smaller">
                     <select name="attr_RangedAttackType">
                         <option value="0" selected>Standard</option>
-                        <option value="0">Swift Attack</option>
+                        <option value="0">Attaque rapide</option>
                     </select>
                 </div>
                 <div class="sheet-item sheet-tiny">
@@ -1317,8 +1317,8 @@
                 </div>
                 <div class="sheet-item sheet-smaller">
                     <select name="attr_RangedAttackRange">
-                        <option value="0" selected>Short</option>
-                        <option value="-20">Long</option>
+                        <option value="0" selected>Courte</option>
+                        <option value="-20">Longue</option>
                         <option value="-30" title="Requires a Half Action of Aiming">Extreme</option>
                     </select>
                 </div>
@@ -1339,24 +1339,24 @@
             <!-- Armour -->
             <div>
                 <input type="checkbox" id="sheet-armor" role="button" class="sheet-hidden">
-                <label for="sheet-armor" class="sheet-headtwo">Armor</label>
+                <label for="sheet-armor" class="sheet-headtwo">Armure</label>
                 <div class="sheet-statblock">
                     <!-- Armour Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-med">
-                            <label>Armor</label> 
+                            <label>Armure</label> 
                         </div>
                         <div class="sheet-item sheet-small">
-                            <label>Location</label> 
+                            <label>Localisation</label> 
                         </div>
                         <div class="sheet-item sheet-med">
-                            <label>Craftsmanship</label> 
+                            <label>Qualité</label> 
                         </div>
                         <div class="sheet-item sheet-tiny">
                             <label>Enc</label> 
                         </div>
                         <div class="sheet-item sheet-micro">
-                            <label>AP</label> 
+                            <label>PA</label> 
                         </div>
                     </div>
                     <!-- Head -->
@@ -1365,14 +1365,14 @@
                             <input type="text" name="attr_Armor-Head-Name"/>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Head</label>
+                            <label>Tête</label>
                         </div>
                         <div class="sheet-item sheet-med sheet-black">
                             <select name="attr_Armor-Head-Craftsmanship">
-                                <option value="Poor">Poor</option>
-                                <option value="Common" selected>Common</option>
-                                <option value="Good">Good</option>
-                                <option value="Best">Best</option>
+                                <option value="Poor">Médiocre</option>
+                                <option value="Common" selected>Commun</option>
+                                <option value="Good">Bonne</option>
+                                <option value="Best">Exceptionnelle</option>
                             </select>
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
@@ -1388,14 +1388,14 @@
                             <input type="text" name="attr_Armor-Arms-Name"/>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Arms</label>
+                            <label>Bras</label>
                         </div>
                         <div class="sheet-item sheet-med sheet-black">
                             <select name="attr_Armor-Arms-Craftsmanship">
-                                <option value="Poor">Poor</option>
-                                <option value="Common" selected>Common</option>
-                                <option value="Good">Good</option>
-                                <option value="Best">Best</option>
+                                <option value="Poor">Médiocre</option>
+                                <option value="Common" selected>Commun</option>
+                                <option value="Good">Bonne</option>
+                                <option value="Best">Exceptionnelle</option>
                             </select>
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
@@ -1411,14 +1411,14 @@
                             <input type="text" name="attr_Armor-Body-Name"/>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Body</label>
+                            <label>Corps</label>
                         </div>
                         <div class="sheet-item sheet-med sheet-black">
                             <select name="attr_Armor-Body-Craftsmanship">
-                                <option value="Poor">Poor</option>
-                                <option value="Common" selected>Common</option>
-                                <option value="Good">Good</option>
-                                <option value="Best">Best</option>
+                                <option value="Poor">Médiocre</option>
+                                <option value="Common" selected>Commun</option>
+                                <option value="Good">Bonne</option>
+                                <option value="Best">Exceptionnelle</option>
                             </select>
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
@@ -1434,14 +1434,14 @@
                             <input type="text" name="attr_Armor-Legs-Name"/>
                         </div>
                         <div class="sheet-item sheet-small sheet-black">
-                            <label>Legs</label>
+                            <label>Jambes</label>
                         </div>
                         <div class="sheet-item sheet-med sheet-black">
                             <select name="attr_Armor-Legs-Craftsmanship">
-                                <option value="Poor">Poor</option>
-                                <option value="Common" selected>Common</option>
-                                <option value="Good">Good</option>
-                                <option value="Best">Best</option>
+                                <option value="Poor">Médiocre</option>
+                                <option value="Common" selected>Commun</option>
+                                <option value="Good">Bonne</option>
+                                <option value="Best">Exceptionnelle</option>
                             </select>
                         </div>
                         <div class="sheet-item sheet-tiny sheet-black">
@@ -1462,7 +1462,7 @@
                     <!-- Talents Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-large">
-                            <label>Talent Name</label> 
+                            <label>Nom de Talent</label> 
                         </div>
                         <div class="sheet-item sheet-hulking">
                             <label>Description</label> 
@@ -1494,13 +1494,13 @@
                     <!-- Trappings Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-hulking">
-                            <label>Trapping</label> 
+                            <label>Equipements</label> 
                         </div>
                         <div class="sheet-item sheet-small">
-                            <label>Location</label> 
+                            <label>Localisation</label> 
                         </div>
                         <div class="sheet-item sheet-small">
-                            <label>Encumbrance</label> 
+                            <label>Encombrement</label> 
                         </div>
                     </div>
                     <!-- Trapping -->
@@ -1523,18 +1523,18 @@
             <!-- Wealth -->
             <div>
                 <input type="checkbox" id="sheet-wealth" role="button" class="sheet-hidden">
-                <label for="sheet-wealth" class="sheet-headtwo">Wealth</label>
+                <label for="sheet-wealth" class="sheet-headtwo">Richesse</label>
                 <div class="sheet-statblock">
                     <!-- Wealth Header -->
                     <div class="sheet-header">
                         <div class="sheet-item sheet-med">
-                            <label>Crowns</label> 
+                            <label>Couronnes d'Or</label> 
                         </div>
                         <div class="sheet-item sheet-med">
-                            <label>Schillings</label> 
+                            <label>Pistoles d'Argent</label> 
                         </div>
                         <div class="sheet-item sheet-med">
-                            <label>Pennies</label> 
+                            <label>Sous</label> 
                         </div>
                     </div>
                     <div class="sheet-row">
